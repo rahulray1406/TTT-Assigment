@@ -2,6 +2,11 @@
 async function getResult()
 {
     const revivedRollNumbers=document.getElementById("InputRoll").value;
+    if(revivedRollNumbers.length<=0)
+    {
+        alert("Please enter some value");
+        return;
+    }
     fetch('/finalResult',{
         method: 'POST',
         headers: {
