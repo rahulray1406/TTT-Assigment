@@ -4,7 +4,9 @@
   "description": "later",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "watch": "nodemon ./index.js",
+    "start": "node index.js",
+    "test": "nodemon ./index.js"
   },
   "repository": {
     "type": "git",
